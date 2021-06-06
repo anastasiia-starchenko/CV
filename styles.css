@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -37,17 +37,17 @@ body:after {
 	clip-path: circle(20% at 10% 10%);
 }
 
-.wrapper {
+#main-wrapper {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 1200px;
+	max-width: 1300px;
 	flex-wrap: wrap;
 	z-index: 1;
 }
 
-.wrapper .card {
+.card {
 	position: relative;
 	width: 280px;
 	height: 400px;
@@ -64,20 +64,73 @@ body:after {
 	backdrop-filter: blur(5px);
 }
 
-.wrapper .card .content {
+.side-main-card {
+	width: 30%;
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+	border-radius: 15px;
+	background: rgba(255,255,255,0.1);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(5px);
+	margin-right: 3%;
+}
+
+.content {
 	padding: 20px;
 	text-align: center;
-	transform: translateY(100px);
-	opacity: 0;
-	transition: 0.5s;
 }
 
-.wrapper .card:hover .content {
-	transform: translateY(0px);
-	opacity: 1;
+.side-main-card-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 30px;
 }
 
-.wrapper .card .content h2 {
+.resume-img {
+	width: 220px;
+	height: 270px;
+	border-radius: 30px;
+	margin-bottom: 40px;
+}
+
+h1 {
+	font-size: 1.7em;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.position-name {
+	font-size: 1.3em;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+.personal-info-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.heading {
+	font-family: 'Limelight', cursive;
+}
+
+
+
+
+.cards-block {
+	width: 67%;
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+	border-radius: 15px;
+	background: rgba(255,255,255,0.1);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(5px);
+}
+
+#main-wrapper .card .content h2 {
 	position: absolute;
 	top: -80px;
 	right: 30px;
@@ -86,19 +139,19 @@ body:after {
 	pointer-events: none;
 }
 
-.wrapper .card .content h3 {
+#main-wrapper .card .content h3 {
 	font-size: 1.8em;
 	color: #fff;
 	z-index: 1;
 }
 
-.wrapper .card .content p {
+#main-wrapper .card .content p {
 	font-size: 1em;
 	color: #fff;
 	font-weight: 300;
 }
 
-.wrapper .card .content a {
+#main-wrapper .card .content a {
 	position: relative;
 	display: inline-block;
 	padding: 8px 20px;
