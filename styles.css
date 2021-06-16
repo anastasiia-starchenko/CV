@@ -154,6 +154,7 @@ h1 {
 	font-size: 1.7em;
 	color: #fff;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .position-name {
@@ -655,13 +656,13 @@ h1 {
 
 .experience-div {
 	display: flex;
+	border-bottom: 1px solid #766269;
+	padding-bottom: 15px;
+	margin-bottom:  15px;
 }
 
 .experience-div-wrapper {
-	border-bottom: 1px solid #766269;
 	font-size: 1.2em;
-	padding-bottom: 15px;
-	margin-bottom:  15px;
 }
 
 .experience-name {
@@ -688,4 +689,25 @@ h1 {
 .circle-line-wrapper {
 	width:  25px;
 	margin-right: 15px;
+}
+
+@media screen and (max-width:1024px) {
+	.side-card-content {
+		padding: 20px;
+	}
+	.personal-info-wrapper {
+		width: 100%;
+	}
+	ul .contacts-item:last-child .contacts-item-link{
+		font-size: 17px;
+	}
+	.skill-block {
+		width: 30px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	ul .contacts-item:last-child .contacts-item-link{
+		font-size: 15px;
+	}
 }
