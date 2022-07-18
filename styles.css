@@ -86,6 +86,7 @@
 
 body {
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	min-height: 1393px;
@@ -94,13 +95,13 @@ body {
 
 body:before {
 	content: '';
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(#f00, #f0f);
-	clip-path: circle(30% at right 70%);
+	clip-path: circle(25% at right 85%);
 }
 
 body:after {
@@ -111,7 +112,7 @@ body:after {
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(#2196f3, #e91e63);
-	clip-path: circle(20% at 10% 10%);
+	clip-path: circle(15% at 5% 5%);
 }
 
 #main-wrapper {
@@ -369,12 +370,12 @@ h1 {
 }
 
 .sass {
-	height:  60%;
+	height:  70%;
 	animation: sass 2s;
 }
 
 .git {
-	height:  40%;
+	height:  70%;
 	animation: git 2s;
 }
 
@@ -384,27 +385,22 @@ h1 {
 }
 
 .gulp {
-	height:  40%;
+	height:  30%;
 	animation: gulp 2s;
 }
 
 .js {
-	height:  30%;
+	height:  75%;
 	animation: js 2s;
 }
 
-.php {
-	height:  20%;
-	animation: php 2s;
-}
-
 .c-plus-plus {
-	height:  80%;
+	height:  50%;
 	animation: c-plus-plus 2s;
 }
 
 .sql {
-	height:  70%;
+	height:  50%;
 	animation: sql 2s;
 }
 
@@ -450,7 +446,7 @@ h1 {
 		height:  0%;
 	}
 	100% {
-		height:  60%;
+		height:  70%;
 	}
 }
 
@@ -459,7 +455,7 @@ h1 {
 		height:  0%;
 	}
 	100% {
-		height:  40%;
+		height:  70%;
 	}
 }
 
@@ -477,7 +473,7 @@ h1 {
 		height:  0%;
 	}
 	100% {
-		height:  40%;
+		height:  30%;
 	}
 }
 
@@ -486,16 +482,7 @@ h1 {
 		height:  0%;
 	}
 	100% {
-		height:  30%;
-	}
-}
-
-@keyframes php {
-	0% {
-		height:  0%;
-	}
-	100% {
-		height:  20%;
+		height:  75%;
 	}
 }
 
@@ -504,7 +491,7 @@ h1 {
 		height:  0%;
 	}
 	100% {
-		height:  80%;
+		height:  50%;
 	}
 }
 
@@ -513,7 +500,7 @@ h1 {
 		height:  0%;
 	}
 	100% {
-		height:  70%;
+		height:  50%;
 	}
 }
 
@@ -662,10 +649,14 @@ h1 {
 	
 }
 
-.institution, .study-years, .faculty, .major {
+.institution, .study-years, .faculty, .major, .techstack {
 	font-size: 1.3em;
 	color: #D5D5D5;
 	font-weight: 300;
+}
+
+.techstack {
+font-size: 18px;
 }
 
 .study-years {
@@ -697,6 +688,22 @@ h1 {
 
 .experience-name {
 	color:  #fff;
+	font-weight:  600;
+}
+
+.working-years {
+	color: #D5D5D5;
+	font-size: 1.05em;
+	font-weight: 300;
+}
+
+.project-details {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.project-description {
+	font-size: 16px;
 }
 
 .experience-description {
@@ -711,7 +718,7 @@ h1 {
 }
 .line {
 	width: 5px;
-	height: 50px;
+	height: 93%;
 	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff);
 	margin:  0 auto;
 }
@@ -729,7 +736,7 @@ h1 {
 		width: 100%;
 	}
 	ul .contacts-item:last-child .contacts-item-link{
-		font-size: 17px;
+		font-size: 19px;
 	}
 	.skill-block {
 		width: 30px;
