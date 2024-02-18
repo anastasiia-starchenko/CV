@@ -389,7 +389,7 @@ h1 {
 }
 
 .gulp {
-	height:  30%;
+	height:  40%;
 	animation: gulp 2s;
 }
 
@@ -398,24 +398,14 @@ h1 {
 	animation: js 2s;
 }
 
-.c-plus-plus {
+.react {
 	height:  50%;
-	animation: c-plus-plus 2s;
+	animation: react 2s;
 }
 
-.sql {
+.redux {
 	height:  50%;
-	animation: sql 2s;
-}
-
-.r {
-	height:  60%;
-	animation: r 2s;
-}
-
-.uml {
-	height:  55%;
-	animation: uml 2s;
+	animation: redux 2s;
 }
 
 @keyframes html {
@@ -477,7 +467,7 @@ h1 {
 		height:  0%;
 	}
 	100% {
-		height:  30%;
+		height:  40%;
 	}
 }
 
@@ -490,7 +480,7 @@ h1 {
 	}
 }
 
-@keyframes c-plus-plus {
+@keyframes react {
 	0% {
 		height:  0%;
 	}
@@ -499,30 +489,12 @@ h1 {
 	}
 }
 
-@keyframes sql {
+@keyframes redux {
 	0% {
 		height:  0%;
 	}
 	100% {
 		height:  50%;
-	}
-}
-
-@keyframes r {
-	0% {
-		height:  0%;
-	}
-	100% {
-		height:  60%;
-	}
-}
-
-@keyframes uml {
-	0% {
-		height:  0%;
-	}
-	100% {
-		height:  55%;
 	}
 }
 
